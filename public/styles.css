@@ -1,6 +1,12 @@
-body {
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(135deg, #143447, #ff0763);
     color: white;
@@ -9,28 +15,47 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-}
-
-h1 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
     text-align: center;
 }
 
-#fetchContacts {
+/* Heading */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+/* Button Styling */
+button {
     padding: 15px 30px;
-    font-size: 1.5rem;
-    background-color: white;
-    color: #143447;
+    margin: 10px;
+    font-size: 1rem;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-    font-weight: bold;
+    font-weight: 600;
+}
+
+/* Primary Button */
+#fetchContacts {
+    background-color: white;
+    color: #143447;
 }
 
 #fetchContacts:hover {
     background-color: #ff0763;
     color: white;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Secondary Button */
+#addContact {
+    background-color: #ff0763;
+    color: white;
+}
+
+#addContact:hover {
+    background-color: white;
+    color: #ff0763;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
