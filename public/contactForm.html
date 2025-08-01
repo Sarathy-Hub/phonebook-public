@@ -9,18 +9,22 @@
 </head>
 <body class="bg-light d-flex justify-content-center align-items-center vh-100">
 
-  <div class="card shadow p-5" style="min-width: 350px;">
+  <div class="card shadow p-5" style="min-width: 500px;">
     <h2 class="mb-4 text-center text-primary">Add New Contact</h2>
     
     <form onsubmit="handleSubmit(event)">
-      <div class="mb-3">
-        <label for="nameInput" class="form-label">Name</label>
-        <input type="text" class="form-control" id="nameInput" required />
+      <div class="mb-3 row align-items-center">
+        <label for="nameInput" class="col-sm-3 col-form-label fw-semibold">Name</label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control" id="nameInput" required />
+        </div>
       </div>
 
-      <div class="mb-3">
-        <label for="emailInput" class="form-label">Email</label>
-        <input type="email" class="form-control" id="emailInput" required />
+      <div class="mb-4 row align-items-center">
+        <label for="emailInput" class="col-sm-3 col-form-label fw-semibold">Email</label>
+        <div class="col-sm-9">
+          <input type="email" class="form-control" id="emailInput" required />
+        </div>
       </div>
 
       <button type="submit" class="btn btn-primary w-100">Submit</button>
@@ -31,15 +35,14 @@
     </button>
   </div>
 
-  <!-- Bootstrap JS (Optional for dropdowns/modals) -->
+  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
   <script>
     function handleSubmit(event) {
       event.preventDefault();
-      // You can process the form data here if needed
       alert("Contact submitted!");
-      window.location.href = "/index.html"; // Go back to home
+      window.location.href = "/index.html";
     }
   </script>
 </body>
