@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #143447, #ff0763);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#fetchContacts {
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    background-color: white;
+    color: #143447;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+#fetchContacts:hover {
+    background-color: #ff0763;
+    color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
